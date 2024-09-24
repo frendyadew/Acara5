@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Acara5</string>
+    <string-array name="status_presensi">
+        <item>Hadir Tepat Waktu</item>
+        <item>Sakit</item>
+        <item>Terlambat</item>
+        <item>Izin</item>
+    </string-array>
+</resources>

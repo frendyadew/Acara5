@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Teks judul -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Presensi"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- DatePicker untuk tanggal presensi -->
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="333dp"
+        android:layout_marginBottom="16dp"
+        android:datePickerMode="calendar" />
+
+    <!-- TimePicker untuk waktu presensi -->
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="153dp"
+        android:layout_marginBottom="16dp"
+        android:timePickerMode="spinner" />
+
+    <!-- Spinner untuk status presensi -->
+    <Spinner
+        android:id="@+id/spinnerStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- EditText untuk keterangan -->
+    <EditText
+        android:id="@+id/editTextKeterangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Keterangan"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"/>
+
+    <!-- Tombol submit -->
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Teks untuk menampilkan pesan berhasil presensi -->
+    <TextView
+        android:id="@+id/textViewHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+
+</LinearLayout>
